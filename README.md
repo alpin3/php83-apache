@@ -1,4 +1,4 @@
-# alpin3/php7-apache
+# alpin3/php83-apache
 
 Multiple purpose Apache and PHP image based on Alpine
 
@@ -10,7 +10,7 @@ Image is based on the official [alpine](https://registry.hub.docker.com/u/alpine
 ## Docker image usage
 
 ```
-docker run [docker-options] alpin3/php-apache
+docker run [docker-options] alpin3/php83-apache
 ```
 
 ## Examples
@@ -18,20 +18,20 @@ docker run [docker-options] alpin3/php-apache
 Typical basic usage:
 
 ```
-docker run -it alpin3/php7-apache
+docker run -it alpin3/php83-apache
 ```
 
 Typical usage in Dockerfile:
 
 ```
-FROM alpin3/php7-apache
+FROM alpin3/php83-apache
 RUN echo "<?php phpinfo() ?>" > /app/index.php
 ```
 
 Typical usage:
 
 ```
-docker run -it --link=somedb:db alpin3/php7-apache
+docker run -it --link=somedb:db alpin3/php83-apache
 ```
 
 ### Todo
