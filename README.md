@@ -10,7 +10,7 @@ Image is based on the official [alpine](https://registry.hub.docker.com/u/alpine
 ## Docker image usage
 
 ```
-docker run [docker-options] alpin3/php83-apache
+docker run [docker-options] ghcr.io/alpin3/php83-apache
 ```
 
 ## Examples
@@ -24,14 +24,14 @@ docker run -it alpin3/php83-apache
 Typical usage in Dockerfile:
 
 ```
-FROM alpin3/php83-apache
+FROM ghcr.io/alpin3/php83-apache
 RUN echo "<?php phpinfo() ?>" > /app/index.php
 ```
 
 Typical usage:
 
 ```
-docker run -it --link=somedb:db alpin3/php83-apache
+docker run -it --link=somedb:db ghcr.io/alpin3/php83-apache
 ```
 
 ### Todo
